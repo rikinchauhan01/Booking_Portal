@@ -1,0 +1,159 @@
+.header {
+  background-color: #003580;
+  color: white;
+  display: flex;
+  min-width: 575px;
+  justify-content: center;
+  position: relative;
+}
+
+.headerContainer {
+  width: 100%;
+  margin: 20px 0px 100px 0px;
+  min-width: 575px;
+}
+
+.headerContainer.listMode {
+  margin: 20px 0px 0px 0px;
+}
+
+.headerList {
+  display: flex;
+  justify-content: start;
+  gap: 50px;
+  margin: 20px 0px 50px 50px;
+}
+
+.headerListItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.headerListItem.active {
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.headerDesc {
+  margin: 20px 0px;
+}
+
+.headerBtn {
+  background-color: #0071c2;
+  color: white;
+  font-weight: 500;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.headerSearch {
+  height: 50px;
+  background-color: white;
+  border: 3px solid #febb02;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-self: center;
+  border-radius: 5px;
+  position: relative;
+  /* bottom: -125px; */
+  left: 50px;
+  width: 90%;
+}
+
+.headerIcon {
+  color: lightgray;
+}
+
+.headerSearchItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.headerSearchInput {
+  border: none;
+  outline: none;
+  width: 100%;
+  color: gray;
+  /* white-space: normal !important; */
+}
+
+.headerSearchText {
+  color: lightgray;
+  cursor: pointer;
+}
+
+
+.options {
+  z-index: 2;
+  /* position: absolute; */
+  top: 50px;
+  right: 100px;
+  background-color: white;
+  color: gray;
+  border-radius: 5px;
+  /* -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4); */
+}
+
+.optionItem {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.optionCounter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: black;
+}
+
+.optionCounterButton {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #0071c2;
+  color: #0071c2;
+  cursor: pointer;
+  background-color: white;
+}
+
+.optionCounterButton:disabled {
+  cursor: not-allowed;
+}
+
+@media screen and (max-width: 700px) {
+  .headerSearch {
+    height: 75px;
+    margin: 0 1rem;
+    left: 15px;
+  }
+  .headerSearchInput {
+    font-size: 11px;
+  }
+  .headerSearchText {
+    font-size:11px;
+  }
+  .headerBtn {
+    height: 65px;
+  }
+}
+/* 
+@media screen and (min-width: 700px) {
+  .headerSearch {
+    height: 75px;
+    margin: 0 1rem;
+    left: 15px;
+  }
+  
+  .headerBtn {
+    height: 65px;
+  }
+} */
